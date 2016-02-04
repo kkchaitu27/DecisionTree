@@ -15,7 +15,6 @@ def entropy(df, target):
     value_frequency = df[target].value_counts()
 
     data_entropy = sum(-value_frequency*1.0/len(df) * np.log2(1.0*value_frequency/len(df)))
-    #print data_entropy
         
     return data_entropy
 
